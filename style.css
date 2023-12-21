@@ -42,7 +42,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 }
 
 .menu{
-    background-color: rgba(14, 13, 12, 0.932);
+    background-color: rgba(7, 5, 4, 0.932);
     color: white;
     text-align: center;
     padding: 20px; /* Espaçamento interno para afastar o conteúdo das bordas */
@@ -90,3 +90,55 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
     margin: 10px 0;
     width: 50%;
 }
+@media(min-width:1000px){
+    #menu-toggle{
+      display:none;
+    }
+
+}
+@media screen and (max-width: 920px) {
+
+   .title.pergunta-box{
+    width: 70% !important;
+   }
+   .father{
+    margin-top: 150px;
+ }
+   
+    #menu-toggle {
+        cursor: pointer;
+        position: relative;
+        top: 30px;
+        width: 100px;
+        font-size: 20px;
+      }
+    #menu-go {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #a11111 !important;
+        width: 30%;
+        font-size: 10px;
+      }
+      #menu-go.show {
+        display: block;
+      }
+      #menu-go a {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+
+
+         #menu-toggle {
+             display: none;
+           }
+
+        }

@@ -65,4 +65,14 @@ clearButton.addEventListener("click", function () {
   resultadoElement.innerHTML = "";
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var mobileMenu = document.getElementById("menu-go");
+  var menuToggle = document.getElementById("menu-toggle");
 
+  // Verifica se o #menu-toggle está presente antes de adicionar o ouvinte de eventos
+  if (menuToggle) {
+    menuToggle.addEventListener("click", function () {
+      mobileMenu.classList.toggle("show");
+    });
+  }
+});
